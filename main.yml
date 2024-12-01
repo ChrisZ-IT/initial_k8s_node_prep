@@ -1,0 +1,12 @@
+---
+- name: Setup base Kubernettes config
+  hosts: all
+  gather_facts: true
+  vars_prompt:
+  - name: desired_k8s_version
+    prompt: Enter the Kubernetes version to install
+    default: latest
+    private: no
+  become: true
+  roles:
+    - k8s_base_setup

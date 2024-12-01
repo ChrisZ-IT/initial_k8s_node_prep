@@ -1,0 +1,5 @@
+---
+roles:
+  - name: k8s_base_setup
+    src: https://github.com/ChrisZ-IT/k8s_base_setup.git
+    version: v1.0.0
